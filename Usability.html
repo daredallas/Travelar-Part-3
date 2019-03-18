@@ -28,19 +28,43 @@
 <h2>Usability Goals</h2>		
 
 <p>
-Able to provide specific user interfaces for different situations (keyboard, star rating, directions): all scenarios we chose for the app (and more) can be easily executed: reading reviews, leaving reviews, menus, finding information, finding directions. The app allows for a variety of ways to get from A to B for example: to go back the user can either tap the back button or tap outside of the bubble <a href="screen 3" target="_self">(screen 3)</a><br><br>
-Controls can be used in both landscape and portrait orientation: user has to flip the phone and the AR camera will be in landscape.<br><br>
-Able to preload nearby location data when the app is opened: app works in the background and based on the location 10 nearest locations automatically.<br><br>
-Able to provide relevant data for locations within a second (if not preloaded): this requirement is acheived thanks to fast algorithms<br><br>
-Able to collect user information anonymously to improve services: App asks for permissions to gather location information and anonymous interactions( “people that go here also go to x”). Popular locations can be used to mark trending restaurants <br><br>
-New users able to find their first interactive location within 30 seconds of opening the app (not including the time it takes them to input their login credentials, which is only a few fields) - the app opens to AR view so it is reasonable to expect the time to be less than 30 seconds.
+<i>Able to provide specific user interfaces for different situations (keyboard, star rating, directions):</i>
 <br><br>
-Rating a location takes less than 30 seconds + the time it takes to type in a comment: once the user points on the location there’s at most 3 clearly visible buttons (“name of location” -> “more” -> “review”) they have to press to leave a review. The user can also take the following path: “name” -> “review stars” -> “review”, the stars serve as a hidden button that takes the user directly to the list of reviews, where the user will also be able to see the "review" button. It is reasonable to expect that the user will take one of those routes and see the review menu after a few seconds. The “post” button is clearly visible.
+The prototype does not fully implement all of the user interfaces required by the full app as Marvel App is limited in this way. We believe for the purpose of evaluating the prototype, a user would understand how interfaces such as a keyboard would have been required to enter the information for logging in. The specific interfaces we are able to simulate were a directions screen and inputting stars for a rating. 
 <br><br>
-Minimal learning curve: the user should remember how to perform a task after having perfomed it once: all actions take at most 4 taps (not including typing comments, usernames, emails, descriptions) and all buttons are clearly labeled, for some actions there are more than one route the user can take to achieve their goal.<br><br>
-The app should not allow the user to get lost in their surroundings: the user can see the directions on the screen and compare them with the world around them. The AR view is not obstructed by buttons that are too large so the user can clearly see what’s on the screen. <br><br><br>
+<i>Controls can be used in both landscape and portrait orientation: </i>
+<br><br>
+The application is intended to work in both landscape and portrait mode. Due to time constraints, the prototype does not currently support landscape orientation as it would require reformatting all of our portrait view screens. 
+<br><br>
+
+<i>Able to preload nearby location data when the app is opened. Relevant information is retrieved quickly:</i>
+<br><br>
+The prototype displays locations with distance associated to them. The functionality to preload nearby locations was not added to the prototype for technical reasons as the prototyping tool does not support it. The prototype does however show how the list would be displayed. Performance is determined by the backend processing and could not be demonstrated in the prototype, but would be considered in a full implementation.
+<br><br>
+<i>Able to collect user information anonymously to improve services:</i>
+<br><br>
+The current prototype does not currently support data analysis as it is mainly a visual high fidelity prototype. For actual usage, analytics would be used to determine popular locations to optimize what gets cached at certain locations where popular attractions are.
+<br><br>
+
+<i>Quick startup for the app:</i>
+<br><br>
+As the prototype is intended to demonstrate the process of logging in, the feature of remembering a users log in for quick startup to the main AR view is not implemented in the prototype. In the full application, the login screen would not be required every time it is opened. Therefore, the startup of the app would be quick after all the assets have loaded in and that depends on each device and any optimizations made for those devices.
+<br><br>
+
+<i>Able to leave reviews quickly:</i>
+<br><br>
+Rating a location takes less than 30 seconds. and the time it takes to type in a comment: once the user points on the location there’s at most 3 clearly visible buttons (“name of location” -> “more” -> “review”) they have to press to leave a review. The user can also take the following path: “name” -> “review stars”, the stars serve as a hidden button that takes the user directly to the review screen. It is reasonable to expect that the user will take one of those routes and see the review menu after a few seconds. The “post” button is clearly visible and only completes the review after text and stars have been included in the review.
+<br><br>
+
+<i>Minimal learning curve:</i>
+<br><br>
+The application starts out, after a user signs in or creates an account, with a text bubble prompt that tells the user that pointing at a desired location is the primary function of the application. By doing this, those that are misguided can easily tell what to do by reading as the prompt only disappears after the image recognition has worked at least once. After the first use, the application can be correlated to looking as what the user sees is what they are getting. The user can easily remember how to perform a task after having performed it once as all actions take at most 4 taps and all buttons are clearly and consistently labeled.
+
+<i>The app should not allow the user to get lost in their surroundings:</i>
+<br><br>
+One important aspect of the application is that the AR view is not obstructed by buttons that are too large so the user can clearly see what’s on the screen and what a label refers to. In the application that we implemented, the labels for locations only load in when the camera has been pointed at them for a certain amount of time. With this implementation, there is a delay on the label showing up which potentially causes a little bit of frustration but also removes constant pop-up while scrolling through a scene. As a result, users can still be focused on what they are looking for. In addition different locations are colour coded differently so the user can tell that they are different.
 </p>
-			
+
 </div>
 </div>
 
