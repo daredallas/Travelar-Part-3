@@ -60,7 +60,77 @@ For the high-fidelity prototype, Marvel App was used to link screens and create 
 			<br>
 			<br>
 			<br>
+	
+	
+<h2>Usability Goals</h2>
+	<br>
 
+<b>Able to provide specific user interfaces for different situations: </b><br><br>
+The prototype does not fully implement all of the user interfaces required by the full app as Marvel App is limited in this way.
+	We believe for the purpose of evaluating the prototype, a user would understand how interfaces such as a keyboard would have been required to enter the information for logging in.
+	The specific interfaces we are able to simulate were a directions screen and inputting stars for a rating. 
+ 
+<br><br>
+<b>Controls can be used in both landscape and portrait orientation: </b><br><br>
+The application is intended to work in both landscape and portrait mode. 
+	Due to time constraints, the prototype does not currently support landscape orientation as it would require reformatting all of our portrait view screens. 
+
+<br><br>
+<b>Able to preload nearby location data when the app is opened. Relevant information is retrieved quickly: </b><br><br>
+The prototype displays locations with distance associated to them. 
+	The functionality to preload nearby locations was not added to the prototype for technical reasons as the prototyping tool does not support it. 
+	The prototype does however show how the list would be displayed. 
+	Performance is determined by the backend processing and could not be demonstrated in the prototype, but would be considered in a full implementation.
+<br><br>
+<b>Able to collect user information anonymously to improve services:</b><br><br>
+The current prototype does not currently support data analysis as it is mainly a visual high fidelity prototype. 
+	For actual usage, analytics would be used to determine popular locations to optimize what gets cached at certain locations where popular attractions are. 
+<br><br>
+<b>Quick startup for the app:</b><br><br>
+As the prototype is intended to demonstrate the process of logging in, the feature of remembering a users log in for quick startup to the main AR view is not implemented in the prototype. 
+	In the full application, the login screen would not be required every time it is opened. 
+	Therefore, the startup of the app would be quick after all the assets have loaded in and that depends on each device and any optimizations made for those devices.
+<br><br>
+<b>Able to leave reviews quickly:</b><br><br>
+Rating a location takes less than 30 seconds. and the time it takes to type in a comment: once the user points on the location there’s at most 3 clearly visible buttons (“name of location” -> “more” -> “review”) they have to press to leave a review. The user can also take the following path: “name” -> “review stars”, the stars serve as a hidden button that takes the user directly to the review screen. It is reasonable to expect that the user will take one of those routes and see the review menu after a few seconds. The “post” button is clearly visible and only completes the review after text and stars have been included in the review. 
+<br><br>
+
+<b>Minimal learning curve: </b><br><br>
+The application starts out, after a user signs in or creates an account, with a text bubble prompt that tells the user that pointing at a desired location is the primary function of the application. 
+	By doing this, those that are misguided can easily tell what to do by reading as the prompt only disappears after the image recognition has worked at least once. 
+	After the first use, the application can be correlated to looking as what the user sees is what they are getting.
+	The user can easily remember how to perform a task after having performed it once as all actions take at most 4 taps and all buttons are clearly and consistently labeled.
+
+<br><br>
+<b>The app should not allow the user to get lost in their surroundings: </b><br><br>
+One important aspect of the application is that the AR view is not obstructed by buttons that are too large so the user can clearly see what’s on the screen and what a label refers to.
+	In the application that we implemented, the labels for locations only load in when the camera has been pointed at them for a certain amount of time.
+	With this implementation, there is a delay on the label showing up which potentially causes a little bit of frustration but also removes constant pop-up while scrolling through a scene.
+	As a result, users can still be focused on what they are looking for.
+	In addition different locations are colour coded differently so the user can tell that they are different.
+<br><br>
+<br><br>
+
+	<br>	
+	
+<h2>User Requirements</h2>
+	<br>
+
+<b>Create opportunities for businesses to connect with potential customers: </b><br><br>
+The locations can add their customized profiles to the app and users can review the places, the feedback can be later viewed by business owners and customers ideas can be implemented, complaints can serve as ways to improve the way the business operates.
+ The app also shows contact information that can easily be accessed if, for example, the user wants to book a reservation for another date. 
+<br><br>
+<b>Provide recommendations and alternatives to immediate location:</b><br><br>
+We have implemented a way for related nearby attractions that might be interesting for the user.
+ The implementation involves a bright and vibrant tag system so that they can be visible to the user and be immediately obvious.
+	Also, since multiple tags are featured, users can find a variety of similar locations because we can only use metrics to suggest the most popular options.
+			<br><br>
+<b>Connecting users to the locations around them through the app, presenting landmark locations with special interface and information:</b><br><br>
+The application can display more than one location at once but has a maximum so that only the most popular destinations show up.
+	Also, these labels can be tapped to lead to a more detailed view with a smooth swiping transition that resembles other functions on the phones that involve transitions.
+	In addition, the pop-up only takes up part of the screen so that the user can still have a visual reference to the location that they are getting information about.
+
+	<br>
 </div>
 
 <script src="js/script.js"></script>
